@@ -18,25 +18,25 @@
             </div>
             <div class="filters">
                 <div class="options">
-                    <input type="radio" name="filter" checked/> Todos
+                    <input value="all" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Todxs
                 </div>
                 <div class="options">
-                    <input type="radio" name="filter" checked/> América
+                    <input value="america" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> América
                 </div>
                 <div class="options">
-                    <input type="radio" name="filter" checked/> Europa
+                    <input value="europe" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Europa
                 </div>
                 <div class="options">
-                    <input type="radio" name="filter" checked/> Ásia
+                    <input value="asia" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Ásia
                 </div>
                 <div class="options">
-                    <input type="radio" name="filter" checked/> Africa
+                    <input value="africa" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Africa
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <h2>Total de países encontrados:<span id="amountCountries">250</span></h2>
+        <h2>Países encontrados:<span id="amountCountries">250</span></h2>
         <hr>
         <div class="allCountries"></div> 
     </main>

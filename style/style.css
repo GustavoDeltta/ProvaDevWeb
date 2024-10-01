@@ -123,14 +123,17 @@ hr{
     align-items: center;
     flex-direction: column;
     padding: 10px;
+    width: 200px;
     border-radius: 5px;
     box-shadow: 0 0 10px #ebc288;
     background-color: #4d1d4d;  
     transition: 0.2s ease-in-out;
+    max-height: 200px;
+    cursor: pointer;
 }
 .countryFlag{
     border-radius: 5px;
-    height: 150px;
+    height: 130px;
     width: 180px;
 }
 .country:hover{
@@ -153,11 +156,13 @@ hr{
     }
     .country{
         padding: 10px;
+        width: 150px;
         max-height: 150px;
     }
     .countryFlag{
         width: 140px;
-        height: 110px;
+        height: 100px;
+        position: a;
     }
 }
 @media screen and (max-width: 424px){
@@ -177,10 +182,11 @@ hr{
     }
     .country{
         padding: 10px;
+        width: 150px;
         max-height: 150px;
     }
     .countryFlag{
-        width: 134px;
-        height: 105px;
+        width: 140px;
+        height: 100px;
     }
 }

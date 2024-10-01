@@ -1,8 +1,9 @@
 var allCountries = [];
 var allCountriesDiv = document.querySelector(".allCountries");
+var amountCountries = document.querySelector("#amountCountries");
 
-async function queryCountries() {
-    var response = await fetch("https://restcountries.com/v3.1/all");
+async function queryCountries(url) {
+    var response = await fetch("https://restcountries.com/v3.1/" + url);
     var infos = await response.json();
 
     allCountries = infos;
@@ -10,8 +11,8 @@ async function queryCountries() {
 }
 
 function showCountries(countries){
+    allCountriesDiv.innerHTML = "";
     for(country of countries){
-        console.log(country.name.common);
 
         var countryDiv = document.createElement("div");
         countryDiv.classList.add("country");
@@ -26,8 +27,14 @@ function showCountries(countries){
                 <p>${country.name.common}</p>
             </div>
         `;
+        countryDiv.addEventListener("click", 
+            () => {
+                window.location.href = `details.html?country=${country.cca2}`;
+            }
+        );
         allCountriesDiv.appendChild(countryDiv);
     }
+    amountCountries.innerHTML = countries.length
 }
 
 function searchCountry(value){
@@ -39,9 +46,20 @@ function searchCountry(value){
         }
     }
 
-    console.log(searchedCountry)
     allCountriesDiv.innerHTML = "";
+    amountCountries.innerHTML = searchedCountry.length
     showCountries(searchedCountry);
 }
 
-queryCountries();
+function searchByFilter(value){
+    // https://restcountries.com/v3.1/region/asia
+    var url = "";
+    if(value != "all"){
+        url = "region/" + value
+    }else{
+        url = "all"
+    }
+    queryCountries(url);
+}
+
+queryCountries("all");
