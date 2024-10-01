@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Gloria+Hallelujah&display=swap');
 
 /* https://paletadecores.com/paleta/1a081f/4d1d4d/05676e/489c79/ebc288/ */
 
@@ -7,28 +8,58 @@
     color: white;
 }
 body{
-    margin-left: 3%;
-    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
     background-color: #1a081f;
-    height: 100%
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    background-image: url('/images/map.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    padding-bottom: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #05676eea;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
 h1{
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 70px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
 }
 .subHeader{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 5px;
     border-radius: 5px;
-    background-color:#4d1d4d ;
+    background-color: transparent ;
+    font-size: 16px;
+    font-weight: 600;
+}
+#searchText{
+    width: 230px;
+    margin-right: 15px;
 }
 .inputSearch{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 input::placeholder{
     color: rgba(255, 255, 255, 0.498);
+    font-size: 16px;
     font-weight: 600;
     padding: 5px;
 }
@@ -39,7 +70,7 @@ input::placeholder{
     margin-left: 5px;
 }
 input{
-    background-color: #1a081f8b;
+    background-color: #4d1d4d;
     border: none;
     border-radius: 5px;
 }
@@ -49,7 +80,7 @@ input{
     margin-right: 5px;
 }
 .options{
-    background-color: #05676e74;
+    background-color: #05676e;
     padding: 4px;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
@@ -58,24 +89,40 @@ input{
     transform: translateY(-3px);
     box-shadow: 0 0 10px #ebc288;
 }
+h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+hr{
+    width: 90%;
+}
 .allCountries{
     overflow:auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: #05676e74;
-    height: 75vh;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 0 10px #4d1d4d;
+    height: 54vh;
+}
+.allCountries::-webkit-scrollbar{
+    width: 15px;
+    background-color:transparent;
+    border-radius: 5px;
+}
+.allCountries::-webkit-scrollbar-thumb{
+    background-color: #fcfcfc85;
+    border-radius: 5px;
 }
 .country{
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 10px;
-    height: 46%;
     border-radius: 5px;
     box-shadow: 0 0 10px #ebc288;
     background-color: #4d1d4d;  
@@ -83,8 +130,57 @@ input{
 }
 .countryFlag{
     border-radius: 5px;
-    width: 283px;
+    height: 150px;
+    width: 180px;
 }
 .country:hover{
     transform: scale(1.05);
+}
+@media screen and (max-width: 872px){
+    header{
+        height: 150px;
+        justify-content: flex-start;
+    }
+    h1{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    .filters{
+        display: none;
+    }
+    .allCountries{
+        height: 68vh;
+    }
+    .country{
+        padding: 10px;
+        max-height: 150px;
+    }
+    .countryFlag{
+        width: 140px;
+        height: 110px;
+    }
+}
+@media screen and (max-width: 424px){
+    header{
+        height: 150px;
+        justify-content: flex-start;
+    }
+    h1{
+        margin-top: 10px;
+        font-size: 9vw
+    }
+    .filters{
+        display: none;
+    }
+    .allCountries{
+        height: 68vh;
+    }
+    .country{
+        padding: 10px;
+        max-height: 150px;
+    }
+    .countryFlag{
+        width: 134px;
+        height: 105px;
+    }
 }
