@@ -27,14 +27,22 @@ function showCountries(countries){
                 <p>${country.name.common}</p>
             </div>
         `;
-        countryDiv.addEventListener("click", 
-            () => {
-                window.location.href = `details.html?country=${country.cca2}`;
-            }
-        );
+
+        countryDiv.id = country.cca2;
+        countryDiv.addEventListener("click", openPageDetails);
         allCountriesDiv.appendChild(countryDiv);
     }
     amountCountries.innerHTML = countries.length
+}
+
+function openPageDetails(event){
+    var countryId;
+    if(event.target.className != "country"){
+        countryId = event.target.parentElement.id;
+    }else{
+        countryId = event.target.id;
+    }
+    window.location.href = `./details.html?id=${countryId}`
 }
 
 function searchCountry(value){
