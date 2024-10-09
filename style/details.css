@@ -264,6 +264,21 @@ hr{
         padding-bottom: 15px;
     }
     .officialName{
+        padding-bottom: 30px;
+    }
+    .capital{
+        padding-bottom: 30px;
+    }
+    .language{
+        padding-bottom: 30px;
+    }
+    .currency{
+        padding-bottom: 30px;
+    }
+    .population{
+        padding-bottom: 30px;
+    }
+    .officialName{
         height: auto;
         justify-content: center;
     }
