@@ -5,42 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes</title>
     <link rel="stylesheet" href="style/details.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <div class="overlay"></div>
     <header>
         <div class="title">
-            <a href="index.html"><h1>Buscador de Países</h1></a>
+            <a href="index.html"><h1>Country Search Engine</h1></a>
         </div>
     </header>
     <main>
         <div class="countryName">
-            <span id="contryName">Brazil</span>
+            <span id="countryName"></span>
         </div>
         <hr>
         <div class="infos">
             <div class="officialName">
-                <h2>Nome Oficial:</h2>
-                <p><span id="officialName">Republica federativa do brasil</span></p>
+                <h2>Official Name:</h2>
+                <p><span id="officialName"></span></p>
             </div>
             <div class="flag">
-                <h2>Bandeira</h2>
-                <img src="images/Flag_of_Brazil.svg.png" id="flag">
+                <h2>Flag</h2>
+                <img src="" id="flag">
             </div>
             <div class="capital">
                 <h2>Capital: </h2>
-                <span id="capital">Brasilia</span>
+                <span id="capital"></span>
             </div>
             <div class="language">
-                <h2>Lingua: </h2>
-                <span id="language">Português</span>
+                <h2>Language(s): </h2>
+                <span id="language"></span>
             </div>
             <div class="currency">
-                <h2>Moeda Local: </h2>
+                <h2>Currency: </h2>
                 <span id="currency">Real</span>
             </div>
             <div class="population">
-                <h2>População: </h2>
+                <h2>Population: </h2>
                 <span id="population">212.583.750</span>
             </div>
             <div class="geoArea">
@@ -49,10 +50,11 @@
                 <h2>km²</h2>
             </div>
             <div class="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31656393.254779518!2d-51.316680000000005!3d-14.40952615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrazil!5e0!3m2!1sen!2sbr!4v1728387787575!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="maps" style="height: 100%; width: 100%;"></div>
             </div>
         </div>
     </main>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script/details.js"></script>
 </body>
 </html>

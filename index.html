@@ -9,25 +9,25 @@
 <body>
     <header>
         <div class="title">
-            <h1>Buscador de Países</h1>
+            <h1>Country Search Engine</h1>
         </div>
         <div class="subHeader">
             <div class="inputSearch">
                 <img src="images/lupa.png" id="search">
-                <input id="searchText" type="text" placeholder="Insira o nome do país." onkeyup="searchCountry(this.value)">
+                <input id="searchText" type="text" placeholder="Insert country name here." onkeyup="searchCountry(this.value)">
             </div>
             <div class="filters">
                 <div class="options">
-                    <input value="all" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Todxs
+                    <input value="all" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> All
                 </div>
                 <div class="options">
-                    <input value="america" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> América
+                    <input value="america" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> America
                 </div>
                 <div class="options">
-                    <input value="europe" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Europa
+                    <input value="europe" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Europe
                 </div>
                 <div class="options">
-                    <input value="asia" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Ásia
+                    <input value="asia" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Asia
                 </div>
                 <div class="options">
                     <input value="africa" onchange="searchByFilter(this.value)" type="radio" name="filter" checked/> Africa
@@ -36,7 +36,7 @@
         </div>
     </header>
     <main>
-        <h2>Países encontrados:<span id="amountCountries">250</span></h2>
+        <h2>Countries Found:<span id="amountCountries"></span></h2>
         <hr>
         <div class="allCountries"></div> 
     </main>

@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     margin-left: 0%;
     margin-right: 0%;
+    margin-bottom: 0%;
     background-color: #1a081f;
 }
 header{
@@ -19,7 +20,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
-    background-image: url('./images/map.png');
+    background-image: url('/images/map.png');
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
@@ -31,7 +32,6 @@ main{
     background-color: #05676eea;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
 }
 h1{
     font-family: "Gloria Hallelujah", cursive;
@@ -106,7 +106,7 @@ hr{
     gap: 20px;
     padding: 15px;
     border-radius: 5px;
-    height: 54vh;
+    height: 55vh;
 }
 .allCountries::-webkit-scrollbar{
     width: 15px;
@@ -168,11 +168,11 @@ hr{
 @media screen and (max-width: 424px){
     header{
         height: 150px;
-        justify-content: flex-start;
+        justify-content: center;
     }
     h1{
         margin-top: 10px;
-        font-size: 9vw
+        font-size: 8vw
     }
     .filters{
         display: none;

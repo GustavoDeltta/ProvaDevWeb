@@ -60,7 +60,6 @@ function searchCountry(value){
 }
 
 function searchByFilter(value){
-    // https://restcountries.com/v3.1/region/asia
     var url = "";
     if(value != "all"){
         url = "region/" + value
