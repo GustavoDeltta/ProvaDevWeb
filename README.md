@@ -47,28 +47,24 @@ O **ProvaDevWeb** é um site interativo que permite aos usuários buscar e explo
 3. Clique no botão de busca.
 4. Os resultados aparecerão abaixo, apresentando os detalhes de cada país correspondente.
 
-## 📸 Screenshots Mobile
+## 📸 Screenshots Mobile - (Clique nas imagens para amplia-las)
 
+<div class="mobile">
+  <img src="screenshots/mobile-screenshot (1).png" alt="Pagina Inicial" width="190"/>
+  <img src="screenshots/mobile-screenshot (2).png" alt="Busca sendo realizada" width="190"/>
+  <img src="screenshots/mobile-screenshot (3).png" alt="Pagina de detalhes do país selecionado" width="190"/>
+  <img src="screenshots/mobile-screenshot (5).png" alt="Mais informações presentes na pagina de detalhes" width="190"/>
+  <img src="screenshots/mobile-screenshot (4).png" alt="Mais informações presentes na pagina de detalhes" width="190"/>
+</div>
 
-<img src="screenshots/mobile-screenshot (1).png" alt="Pagina Inicial" width="210"/>
-<img src="screenshots/mobile-screenshot (2).png" alt="Busca sendo realizada" width="210"/>
-<img src="screenshots/mobile-screenshot (3).png" alt="Pagina de detalhes do país selecionado" width="210"/>
-<img src="screenshots/mobile-screenshot (5).png" alt="Mais informações presentes na pagina de detalhes" width="210"/>
-<img src="screenshots/mobile-screenshot (4).png" alt="Mais informações presentes na pagina de detalhes" width="210"/>
+## 📸 Screenshots Desktop - (Clique nas imagens para amplia-las)
 
-## 📸 Screenshots Desktop
-
-<img src="screenshots/desktop-screenshot (1).png" alt="Pagina Inicial" width="350"/>
-<img src="screenshots/desktop-screenshot (2).png" alt="Busca realizada" width="350"/>
-
-#
-
-<img src="screenshots/desktop-screenshot (3).png" alt="Pagina de detalhes do país selecionado" width="350"/>
-<img src="screenshots/desktop-screenshot (4).png" alt="Mais informações presentes na pagina de detalhes" width="350"/>
-
-#
-
-<img src="screenshots/desktop-screenshot (5).png" alt="Mais informações presentes na pagina de detalhes" width="350"/>
+<div class="desktop">
+  <img src="screenshots/desktop-screenshot (1).png" alt="Pagina Inicial" width="450"/>
+  <img src="screenshots/desktop-screenshot (3).png" alt="Pagina de detalhes do país selecionado" width="450"/>
+  <img src="screenshots/desktop-screenshot (4).png" alt="Mais informações presentes na pagina de detalhes" width="450"/>
+  <img src="screenshots/desktop-screenshot (5).png" alt="Mais informações presentes na pagina de detalhes" width="450"/>
+</div>
 
 ## 💽 Como Executar o Projeto Localmente
 
